@@ -1,0 +1,6 @@
+node_modules
+medios_sin_usar
+tools
+.git
+.github
+*.log
