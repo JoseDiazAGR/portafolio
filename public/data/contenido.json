@@ -1,0 +1,273 @@
+{
+  "perfil": {
+    "nombre": "José Guadalupe Díaz",
+    "titulo": "Marketing Digital · Gestión de Negocios · Finanzas",
+    "frase": "Convierto negocios desconocidos en marcas que venden: estrategia, contenido en video y pauta digital con resultados medibles.",
+    "foto": "assets/photos/foto-jose-diaz.jpg",
+    "cv": "assets/docs/cv-jose-guadalupe-diaz-2026-actualizado.pdf",
+    "ubicacion": "Choloma, Cortés, Honduras",
+    "telefono": "+504 3145-7713",
+    "whatsapp": "50431457713",
+    "email": "Jose_14guadalupe@hotmail.com",
+    "sobreMi": [
+      "Profesional del área administrativa, financiera y de gestión integral de estrategias de marketing, con más de 6 años de experiencia corporativa y más de 3 años de experiencia independiente gestionando negocios propios y de terceros.",
+      "Esa combinación me da una visión integral de las empresas: entiendo los números, la operación y la comunicación, y diseño estrategias que se pueden medir."
+    ],
+    "cifras": [
+      { "valor": "6+", "etiqueta": "años de experiencia corporativa" },
+      { "valor": "13.7K", "etiqueta": "conversaciones generadas con Meta Ads" },
+      { "valor": "1M+", "etiqueta": "vistas en un solo video orgánico" },
+      { "valor": "30+", "etiqueta": "emprendedores impulsados a la vez" }
+    ]
+  },
+
+  "metaAds": {
+    "fuente": "Datos exportados de Meta Ads Manager · septiembre 2023 – octubre 2026",
+    "kpis": [
+      { "valor": "$4,849", "etiqueta": "invertidos en pauta" },
+      { "valor": "13,720", "etiqueta": "conversaciones y leads" },
+      { "valor": "4.88M", "etiqueta": "impresiones" },
+      { "valor": "$0.35", "etiqueta": "costo promedio por conversación" }
+    ],
+    "negocios": [
+      { "nombre": "Master Electronic (celulares e impresoras)", "conversaciones": 4996, "inversion": 1015.41 },
+      { "nombre": "Mujercitas · La Teatral Sampedrana", "conversaciones": 2205, "inversion": 999.87 },
+      { "nombre": "Mois Pizza", "conversaciones": 1662, "inversion": 1078.20 },
+      { "nombre": "Venta de proyector", "conversaciones": 939, "inversion": 79.92 },
+      { "nombre": "Mangonadas y chamoyadas (heladería)", "conversaciones": 726, "inversion": 611.30 },
+      { "nombre": "Casa en Pinalejo", "conversaciones": 260, "inversion": 125.23 }
+    ]
+  },
+
+  "proyectos": [
+    {
+      "id": "zona-multimarket",
+      "nombre": "Zona Multimarket",
+      "categoria": "Tienda colectiva · B2B",
+      "portada": "assets/images/videos-pagina-zm.png",
+      "problema": "En 2020 importábamos gadgets tecnológicos de China para vender con campañas pagadas en Meta, pero no tener tienda física generaba desconfianza y problemas de coordinación. Un local céntrico y personal eran costosos, y otros emprendedores tenían exactamente la misma necesidad.",
+      "estrategia": "Crear un espacio físico para exhibir productos, validar la tienda ante los clientes y funcionar como centro logístico y de atención, ofreciendo ese servicio a otros emprendedores por un valor mínimo.",
+      "ejecucion": "Alquilamos y equipamos un local para renta de repisas, visitamos emprendedores hasta cubrir los gastos y ofrecimos envíos a todo el país. El valor diferencial: publicidad personalizada para cada emprendedor con videos orgánicos, campañas colectivas y de catálogo en Meta, y capacitación para que montaran sus propias campañas.",
+      "resultado": "Videos de la tienda con más de un millón de vistas segmentadas en Honduras. ZM se convirtió en la plataforma de la que nacieron negocios como ALEXCELL HN, CELL COMP, ELECTRIC MASTER, ARYBABY, SURVIVOR HN, INTENSO PERFUME, MASTER EXPRES y BELEN AUDIOCAR.",
+      "metricas": [
+        { "valor": "30+", "etiqueta": "emprendedores en simultáneo" },
+        { "valor": "4 años", "etiqueta": "de operación" },
+        { "valor": "1M+", "etiqueta": "vistas en un video" }
+      ],
+      "videos": [
+        { "src": "assets/videos/video-de-mas-1-millon-de-vistas-zm.mp4", "titulo": "Video con más de 1 millón de vistas" },
+        { "src": "assets/videos/funcionamiento-de-zm.mp4", "titulo": "Cómo funciona ZM" },
+        { "src": "assets/videos/campana-de-reconocimiento-zm.mp4", "titulo": "Campaña de reconocimiento" },
+        { "src": "assets/videos/anuncios-para-productos-de-emprendedores.mp4", "titulo": "Anuncios para productos de emprendedores" },
+        { "src": "assets/videos/anuncios-para-videos-de-emprendedores.mp4", "titulo": "Anuncios en video para emprendedores" },
+        { "src": "assets/videos/video-para-dolche.mp4", "titulo": "Video para Dolche" }
+      ],
+      "imagenes": ["assets/images/videos-zm.png", "assets/images/videos-pagina-zm.png"],
+      "enlaces": [
+        { "red": "Facebook", "url": "https://web.facebook.com/profile.php?id=100086313302199&sk=reels_tab" }
+      ]
+    },
+    {
+      "id": "mujercitas",
+      "nombre": "Mujercitas · La Teatral Sampedrana",
+      "categoria": "Artes escénicas · B2B educativo",
+      "portada": "assets/images/videos-teatral-san-pedrana.png",
+      "problema": "La compañía teatral trabajaba con una agencia de marketing y en la temporada anterior invirtió más de medio millón de lempiras en publicidad, lo que redujo la ganancia.",
+      "estrategia": "Generar expectativa con meses de anticipación en Meta y TikTok, y abrir un canal B2B con centros educativos para vender funciones y boletos al por mayor.",
+      "ejecucion": "Contenido desde los primeros ensayos: actuaciones, vestuario y preparación. Visitas a instituciones públicas y privadas proponiendo la obra como material didáctico, con funciones completas o lotes de boletos a precio especial. Preventa con contenido orgánico y pagado, testimonios reales del público, retargeting y códigos QR en sala para que los asistentes comentaran y compartieran.",
+      "resultado": "Más del 50% de las ventas vino de las instituciones educativas. Se alcanzó un 95% de ocupación en 20 funciones de 320 butacas, se vendieron más entradas a precio completo y la inversión en pauta bajó de $20 mil a $5 mil. Se agregaron funciones por la demanda.",
+      "metricas": [
+        { "valor": "95%", "etiqueta": "de ocupación" },
+        { "valor": "-75%", "etiqueta": "inversión en pauta" },
+        { "valor": "9 meses", "etiqueta": "de campaña" }
+      ],
+      "videos": [
+        { "src": "assets/videos/entrevista-la-teatral-sanpedrana.mp4", "titulo": "Entrevista – La Teatral Sampedrana" },
+        { "src": "assets/videos/entrevista-2-la-teatral-san-pedrana.mp4", "titulo": "Entrevista 2" }
+      ],
+      "imagenes": ["assets/images/videos-teatral-san-pedrana.png", "assets/images/videos-la-teatral-san-pedrana.png"],
+      "enlaces": [
+        { "red": "TikTok", "url": "https://www.tiktok.com/@lateatralsampedrana1" },
+        { "red": "Facebook", "url": "https://web.facebook.com/profile.php?id=100063756662536" }
+      ]
+    },
+    {
+      "id": "master-electronic",
+      "nombre": "Master Electronic · ALEXCELL HN",
+      "categoria": "Servicios técnicos · Marca local",
+      "portada": "assets/images/campanas-meta-ads-1.png",
+      "problema": "Un técnico con 12 años de experiencia en reparación de celulares y electrónica se independiza y abre su taller en Choloma, donde nadie lo conocía.",
+      "estrategia": "Crear la marca desde cero y ejecutar campañas de reconocimiento, posicionamiento y venta de servicios dirigidas al público local.",
+      "ejecucion": "Branding con nombre y logo. Serie de videos en TikTok mostrando la preparación del local y la historia del técnico, segmentados a Choloma. El mejor video se adaptó para Meta con una campaña a 7 km dirigida a personas con dispositivos electrónicos: primero reconocimiento y luego mensajes a WhatsApp, dejando activo solo el video con más conversiones.",
+      "resultado": "Más de 20 cotizaciones y más de 10 clientes en tienda por día, con un ticket promedio de L 900. El taller se saturó, se contrató un segundo técnico y se convirtió en el taller de microsoldadura #1 de Choloma, recibiendo incluso trabajo de otros talleres. Luego se abrieron un segundo y un tercer local (impresoras y computadoras).",
+      "metricas": [
+        { "valor": "4,355", "etiqueta": "conversaciones de WhatsApp" },
+        { "valor": "$0.14", "etiqueta": "costo por conversación" },
+        { "valor": "3", "etiqueta": "locales abiertos" }
+      ],
+      "videos": [
+        { "src": "assets/videos/video-ganador-mater-eelectronic.mp4", "titulo": "Video ganador" },
+        { "src": "assets/videos/campana-de-reparacion-de-celulares.mp4", "titulo": "Campaña de reparación de celulares" },
+        { "src": "assets/videos/mantenimiento-de-impresora.mp4", "titulo": "Mantenimiento de impresoras" }
+      ],
+      "imagenes": ["assets/images/campanas-meta-ads-1.png", "assets/images/campanas-meta-ads.png", "assets/images/meta-ads-campanas.png", "assets/images/alexcells.png"],
+      "enlaces": [
+        { "red": "TikTok", "url": "https://www.tiktok.com/@alexcells.hn" },
+        { "red": "Facebook", "url": "https://web.facebook.com/alexcells.HND" }
+      ]
+    }
+  ],
+
+  "emprendimientos": [
+    {
+      "nombre": "Mois Pizza",
+      "tipo": "Pizzería artesanal",
+      "imagen": "assets/images/mois-pizza.png",
+      "descripcion": "Emprendimiento propio: creé la marca, administré la operación y el flujo de caja, y produje el contenido y las campañas de venta.",
+      "videos": [
+        { "src": "assets/videos/video-ganador-mois-pizza.mp4", "titulo": "Video ganador" },
+        { "src": "assets/videos/video-promosion-mois-pizza-hoy-no-voy-a-comprar.mp4", "titulo": "Promoción “Hoy no voy a comprar”" },
+        { "src": "assets/videos/video-mois-pizza-elecciones.mp4", "titulo": "Campaña de elecciones" },
+        { "src": "assets/videos/pizza-solo.mp4", "titulo": "Producto" },
+        { "src": "assets/videos/fresas-mois-pizza.mp4", "titulo": "Fresas" }
+      ],
+      "metricas": [
+        { "valor": "1,662", "etiqueta": "conversaciones en Meta" },
+        { "valor": "$0.65", "etiqueta": "costo por conversación" },
+        { "valor": "4", "etiqueta": "campañas de venta" }
+      ]
+    },
+    {
+      "nombre": "Frutypostres",
+      "tipo": "Heladería y postres",
+      "imagen": "assets/videos/posters/anuncio-mangonada.jpg",
+      "descripcion": "Emprendimiento propio de helados y postres: marca, operación y campañas de venta en redes sociales.",
+      "videos": [
+        { "src": "assets/videos/anuncio-mangonada.mp4", "titulo": "Anuncio Mangonada" }
+      ],
+      "metricas": [
+        { "valor": "726", "etiqueta": "conversaciones en Meta" },
+        { "valor": "114K", "etiqueta": "personas alcanzadas" },
+        { "valor": "735K", "etiqueta": "impresiones" }
+      ]
+    }
+  ],
+
+  "metodologia": {
+    "principio": "“Antes de proponer una campaña necesito entender qué problema comercial estamos intentando resolver.”",
+    "enfoque": "Conectar el marketing digital con los números reales del negocio: ventas, CAC, margen y crecimiento sostenible.",
+    "pasos": [
+      {
+        "paso": "01",
+        "titulo": "Diagnóstico Comercial",
+        "detalle": "Identificar el cuello de botella real: ¿es tráfico, tasa de conversión, ticket promedio, producto o estacionalidad?"
+      },
+      {
+        "paso": "02",
+        "titulo": "Datos & Hipótesis",
+        "detalle": "Formular hipótesis comerciales claras basadas en números del negocio, cliente ideal y ventaja competitiva."
+      },
+      {
+        "paso": "03",
+        "titulo": "Estrategia & Prueba",
+        "detalle": "Validación con presupuestos controlados: producción de video persuasivo, ganchos de atención y pruebas de oferta."
+      },
+      {
+        "paso": "04",
+        "titulo": "Medición & Margen",
+        "detalle": "Análisis de CAC frente al margen bruto. Las métricas de vanidad diagnostican; las ventas reales deciden el presupuesto."
+      },
+      {
+        "paso": "05",
+        "titulo": "Escalamiento",
+        "detalle": "Reinversión y aumento de pauta únicamente en canales y anuncios que demuestren rentabilidad operativa y retorno medible."
+      }
+    ]
+  },
+
+  "inmobiliario": {
+    "descripcion": "Durante el último año he vendido propiedades produciendo el video de cada una y gestionando sus campañas publicitarias.",
+    "propiedades": [
+      { "titulo": "Casa de 2 plantas", "ubicacion": "Choloma", "video": "assets/videos/casa-2-plantas-choloma.mp4", "dato": "Venta con video local" },
+      { "titulo": "Casa en Pinalejo", "ubicacion": "Pinalejo", "video": "assets/videos/casa-en-pinalejo.mp4", "dato": "260 interesados por WhatsApp" },
+      { "titulo": "Terreno", "ubicacion": "Utila", "video": "assets/videos/terreno-en-utila.mp4", "dato": "Inversión y turismo" }
+    ]
+  },
+
+  "experiencia": [
+    {
+      "periodo": "Jun 2025 – Jul 2026",
+      "cargo": "Consultor de marketing y publicidad digital",
+      "empresa": "ALEXCELL HN · Electronic Master · La Teatral Sampedrana",
+      "puntos": [
+        "Branding, canales de comunicación, presupuestos, objetivos y KPIs para el posicionamiento de negocios y marcas.",
+        "Edición de video profesional y pauta en redes sociales y medios tradicionales."
+      ]
+    },
+    {
+      "periodo": "Mar 2023 – Jul 2026",
+      "cargo": "Administrador general",
+      "empresa": "Proyectos propios: Zona Multimarket · Mois Pizza · Frutypostres",
+      "puntos": [
+        "Administración integral, flujo de caja, presupuestos, cumplimiento fiscal y manejo de personal.",
+        "Importación desde China y EE. UU., negociación con proveedores, inventarios y envíos nacionales.",
+        "Estrategia de marketing completa: branding, lanzamientos, pauta, métricas e informes."
+      ]
+    },
+    {
+      "periodo": "Mar 2017 – Feb 2023",
+      "cargo": "Cajero · Auxiliar contable · Auxiliar de operaciones",
+      "empresa": "Cooperativa Chorotega (Guamilito, Metrocentro, Choloma)",
+      "puntos": [
+        "Responsable directo de cierres contables y del flujo de efectivo de 3 agencias en Choloma, sin interrupciones durante toda mi gestión.",
+        "Preparación de auditorías internas y externas (CONSUCOOP, Municipalidad) con cero hallazgos de alto riesgo.",
+        "Participación en la implementación de la norma ISO 9001:2015, certificada a la cooperativa.",
+        "Jefatura de la filial (3 agencias) en ausencia de la gerencia."
+      ]
+    }
+  ],
+
+  "educacion": [
+    {
+      "titulo": "Licenciatura en Administración y Generación de Empresas",
+      "institucion": "Universidad Nacional Autónoma de Honduras (UNAH)",
+      "estado": "Pasante Universitario (30% de la carrera aprobado)",
+      "periodo": "Formación Universitaria",
+      "tipo": "Educación Superior"
+    },
+    {
+      "titulo": "Bachillerato Técnico Profesional en Contaduría y Finanzas",
+      "institucion": "Instituto Técnico José Castro López",
+      "estado": "Graduado · Cofradía, Cortés",
+      "periodo": "Educación Media Técnica",
+      "tipo": "Finanzas & Contabilidad"
+    }
+  ],
+
+  "cursos": [
+    { "titulo": "Fundamentos de Marketing Digital", "institucion": "Google", "modalidad": "Virtual", "anio": "2023", "logo": "assets/logos/google.svg", "certificado": "" },
+    { "titulo": "Estrategias de Publicidad y Campañas con Meta Ads", "institucion": "Meta", "modalidad": "Virtual", "anio": "2024", "logo": "assets/logos/meta.svg", "certificado": "" },
+    { "titulo": "Introducción al desarrollo web: HTML y CSS", "institucion": "Google", "modalidad": "Virtual", "anio": "2023", "logo": "assets/logos/html5.svg", "certificado": "" },
+    { "titulo": "AI Fluency: Framework & Foundations", "institucion": "Anthropic", "modalidad": "Virtual", "anio": "2024", "logo": "assets/logos/anthropic.svg", "certificado": "" },
+    { "titulo": "Storytelling en el Marketing Digital", "institucion": "The University of Chicago", "modalidad": "Virtual", "anio": "2023", "logo": "", "certificado": "" },
+    { "titulo": "Implementación de la norma ISO 9001:2015", "institucion": "Cooperativa Chorotega", "modalidad": "Presencial", "anio": "2019", "logo": "", "certificado": "" }
+  ],
+
+  "herramientas": [
+    { "nombre": "Excel", "logo": "assets/logos/excel.svg", "grupo": "Datos" },
+    { "nombre": "Power BI", "logo": "assets/logos/powerbi.svg", "grupo": "Datos" },
+    { "nombre": "SQL", "logo": "assets/logos/mysql.svg", "grupo": "Datos" },
+    { "nombre": "Meta Ads", "logo": "assets/logos/meta.svg", "grupo": "Marketing" },
+    { "nombre": "Google Ads", "logo": "assets/logos/googleads.svg", "grupo": "Marketing" },
+    { "nombre": "Google Analytics", "logo": "assets/logos/googleanalytics.svg", "grupo": "Marketing" },
+    { "nombre": "TikTok", "logo": "assets/logos/tiktok.svg", "grupo": "Marketing" },
+    { "nombre": "Edición de video", "logo": "assets/logos/video.svg", "grupo": "Marketing" },
+    { "nombre": "Python", "logo": "assets/logos/python.svg", "grupo": "Desarrollo" },
+    { "nombre": "JavaScript", "logo": "assets/logos/javascript.svg", "grupo": "Desarrollo" },
+    { "nombre": "HTML", "logo": "assets/logos/html5.svg", "grupo": "Desarrollo" },
+    { "nombre": "CSS", "logo": "assets/logos/css.svg", "grupo": "Desarrollo" },
+    { "nombre": "IA y automatizaciones", "logo": "assets/logos/claude.svg", "grupo": "Desarrollo" }
+  ],
+
+  "landings": []
+}

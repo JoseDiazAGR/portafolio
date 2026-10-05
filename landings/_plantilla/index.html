@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nombre del proyecto · José Guadalupe Díaz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script>if (localStorage.getItem("tema") === "claro") document.documentElement.classList.remove("dark");</script>
+  <script type="module">import "../../src/style.css";</script>
+</head>
+<body>
+  <!--
+    PLANTILLA PARA UNA LANDING NUEVA
+    1. Copia esta carpeta y renómbrala sin "_" (ej. landings/mi-proyecto).
+    2. Edita este archivo. Usa las mismas clases: card, btn-gold, btn-ghost, eyebrow, section-title...
+    3. Agrega la tarjeta en "landings" dentro de public/data/contenido.json con
+       "url": "./landings/mi-proyecto/index.html"
+  -->
+  <header class="container-site flex h-16 items-center justify-between">
+    <a href="../../index.html" class="text-sm text-muted transition hover:text-gold">← Volver al portafolio</a>
+  </header>
+  <main class="container-site section">
+    <p class="eyebrow">Nuevo proyecto</p>
+    <h1 class="section-title">Título de la landing</h1>
+    <p class="mt-4 max-w-2xl text-muted">Descripción del proyecto.</p>
+    <a href="#" class="btn-gold mt-8">Llamado a la acción</a>
+  </main>
+</body>
+</html>

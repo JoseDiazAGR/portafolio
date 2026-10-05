@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Compilación
+dist/
+
+# Archivos multimedia no utilizados (conservar solo localmente)
+medios_sin_usar/
+
+# Logs y SO
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
