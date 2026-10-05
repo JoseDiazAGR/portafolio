@@ -238,19 +238,212 @@
     {
       "titulo": "Bachillerato Técnico Profesional en Contaduría y Finanzas",
       "institucion": "Instituto Técnico José Castro López",
-      "estado": "Graduado · Cofradía, Cortés",
-      "periodo": "Educación Media Técnica",
-      "tipo": "Finanzas & Contabilidad"
+      "estado": "Graduado con Excelencia Académica (Índice: 92.3%) · Cofradía, Cortés",
+      "periodo": "Educación Media Técnica (2016)",
+      "tipo": "Finanzas & Contabilidad",
+      "certificado": "assets/certificados/diploma-excelencia-academica-btp-contaduria.jpg"
     }
   ],
 
   "cursos": [
-    { "titulo": "Fundamentos de Marketing Digital", "institucion": "Google", "modalidad": "Virtual", "anio": "2023", "logo": "assets/logos/google.svg", "certificado": "" },
-    { "titulo": "Estrategias de Publicidad y Campañas con Meta Ads", "institucion": "Meta", "modalidad": "Virtual", "anio": "2024", "logo": "assets/logos/meta.svg", "certificado": "" },
-    { "titulo": "Introducción al desarrollo web: HTML y CSS", "institucion": "Google", "modalidad": "Virtual", "anio": "2023", "logo": "assets/logos/html5.svg", "certificado": "" },
-    { "titulo": "AI Fluency: Framework & Foundations", "institucion": "Anthropic", "modalidad": "Virtual", "anio": "2024", "logo": "assets/logos/anthropic.svg", "certificado": "" },
-    { "titulo": "Storytelling en el Marketing Digital", "institucion": "The University of Chicago", "modalidad": "Virtual", "anio": "2023", "logo": "", "certificado": "" },
-    { "titulo": "Implementación de la norma ISO 9001:2015", "institucion": "Cooperativa Chorotega", "modalidad": "Presencial", "anio": "2019", "logo": "", "certificado": "" }
+    {
+      "titulo": "Estrategias de Publicidad y Campañas con Meta Ads",
+      "institucion": "Meta",
+      "modalidad": "Virtual",
+      "anio": "2024",
+      "logo": "assets/logos/meta.svg",
+      "certificado": "",
+      "descripcion": "Especialización en arquitectura de campañas de conversión, optimización de presupuestos, audiencias personalizadas y retargeting."
+    },
+    {
+      "titulo": "AI Fluency: Framework & Foundations",
+      "institucion": "Anthropic",
+      "modalidad": "Virtual",
+      "anio": "2024",
+      "logo": "assets/logos/anthropic.svg",
+      "certificado": "",
+      "descripcion": "Fundamentos y marcos de trabajo con modelos avanzados de inteligencia artificial aplicados a flujos operativos y de negocio."
+    },
+    {
+      "titulo": "Taller Vivencial: Chorotega a la Meta Sí Llega",
+      "institucion": "CRECERH & Cooperativa Chorotega",
+      "modalidad": "Presencial",
+      "anio": "2023",
+      "logo": "",
+      "certificado": "assets/certificados/taller-cumplimiento-de-metas-chorotega.jpg",
+      "descripcion": "Instrucción vivencial orientada al cumplimiento de metas comerciales, trabajo bajo presión y rendimiento de equipos."
+    },
+    {
+      "titulo": "Fundamentos de Marketing Digital",
+      "institucion": "Google",
+      "modalidad": "Virtual",
+      "anio": "2023",
+      "logo": "assets/logos/google.svg",
+      "certificado": "",
+      "descripcion": "Estrategias omnicanal, presencia digital, SEO, analítica web y embudos de conversión."
+    },
+    {
+      "titulo": "Storytelling en el Marketing Digital",
+      "institucion": "The University of Chicago",
+      "modalidad": "Virtual",
+      "anio": "2023",
+      "logo": "",
+      "certificado": "",
+      "descripcion": "Estructuras narrativas aplicadas a marcas, retención de audiencia y comunicación persuasiva."
+    },
+    {
+      "titulo": "Introducción al desarrollo web: HTML y CSS",
+      "institucion": "Google",
+      "modalidad": "Virtual",
+      "anio": "2023",
+      "logo": "assets/logos/html5.svg",
+      "certificado": "",
+      "descripcion": "Fundamentos de maquetación semántica, diseño web responsivo y estándares de interfaz."
+    },
+    {
+      "titulo": "Programa Cultura de Servicio Chorotega",
+      "institucion": "Cooperativa Chorotega & Capital Humano Consultores",
+      "modalidad": "Presencial",
+      "anio": "2022",
+      "logo": "",
+      "certificado": "assets/certificados/programa-cultura-de-servicio-chorotega.jpg",
+      "descripcion": "8 horas teórico-prácticas orientadas a fidelización del cliente, resolución de conflictos y calidad de atención."
+    },
+    {
+      "titulo": "Actualización Fiscal y Tributaria SAR/2021",
+      "institucion": "FACACH & Cámara de Comercio de Tegucigalpa (CCIT)",
+      "modalidad": "Virtual",
+      "anio": "2021",
+      "logo": "",
+      "certificado": "assets/certificados/actualizacion-fiscal-sar-2021.jpg",
+      "descripcion": "9 horas de formación especializada en reformas tributarias, régimen de facturación, ISR y escudos fiscales en Honduras."
+    },
+    {
+      "titulo": "Programa de Economía Social para Colaboradores",
+      "institucion": "Cooperativa Chorotega & Escuela de Economía Social",
+      "modalidad": "Presencial",
+      "anio": "2021",
+      "logo": "",
+      "certificado": "assets/certificados/programa-economia-social-chorotega.jpg",
+      "descripcion": "50 horas de formación integral en gestión de organizaciones cooperativas, finanzas solidarias y desarrollo comunitario."
+    },
+    {
+      "titulo": "Proyecto Emprende 0502: Formación Empresarial",
+      "institucion": "USAID Empleando Futuros & CCICH",
+      "modalidad": "Presencial",
+      "anio": "2021",
+      "logo": "",
+      "certificado": "assets/certificados/proyecto-emprende-usaid-ccich.jpg",
+      "descripcion": "Formación integral en creación, validación de modelos de negocio, ventas y sostenibilidad de microempresas."
+    },
+    {
+      "titulo": "Diplomado en Continuidad del Negocio y Prevención de Desastres",
+      "institucion": "Universidad Metropolitana de Honduras & Seguros Equidad",
+      "modalidad": "Presencial",
+      "anio": "2020",
+      "logo": "",
+      "certificado": "assets/certificados/diplomado-continuidad-negocios-seguros-equidad.jpg",
+      "descripcion": "40 horas académicas sobre gestión de riesgos operativos, planes de contingencia y resiliencia corporativa."
+    },
+    {
+      "titulo": "Taller: Cada Día Mejor Un Reto de Todos",
+      "institucion": "CRECERH & Cooperativa Chorotega",
+      "modalidad": "Presencial",
+      "anio": "2020",
+      "logo": "",
+      "certificado": "assets/certificados/cada-dia-mejor-un-reto-de-todos-crecerh.jpg",
+      "descripcion": "12 horas de instrucción profesional en desarrollo humano, motivación laboral, trabajo colaborativo y liderazgo."
+    },
+    {
+      "titulo": "Capacitación: Finanzas para no Financieros",
+      "institucion": "FACACH & Cooperativa Chorotega",
+      "modalidad": "Presencial",
+      "anio": "2019",
+      "logo": "",
+      "certificado": "assets/certificados/finanzas-para-no-financieros-facach-chorotega.jpg",
+      "descripcion": "8 horas de análisis financiero, lectura de balances, control de costos e interpretación contable para toma de decisiones."
+    },
+    {
+      "titulo": "Implementación de la norma ISO 9001:2015",
+      "institucion": "Cooperativa Chorotega",
+      "modalidad": "Presencial",
+      "anio": "2019",
+      "logo": "",
+      "certificado": "",
+      "descripcion": "Participación activa en el diseño, control de procesos y auditoría de calidad bajo la norma internacional ISO 9001:2015."
+    },
+    {
+      "titulo": "Conferencia: New Marketing y Nuevas Tendencias",
+      "institucion": "Universidad Tecnológica de Honduras (UTH)",
+      "modalidad": "Presencial",
+      "anio": "2016",
+      "logo": "",
+      "certificado": "assets/certificados/conferencia-new-marketing-uth.jpg",
+      "descripcion": "Conferencia sobre evolución del mercadeo, nuevos canales digitales y psicología del consumidor."
+    },
+    {
+      "titulo": "XVII Jornada: Innovaciones Tecnológicas",
+      "institucion": "Universidad Tecnológica de Honduras (UTH)",
+      "modalidad": "Presencial",
+      "anio": "2016",
+      "logo": "",
+      "certificado": "assets/certificados/jornada-innovaciones-tecnologicas-uth.jpg",
+      "descripcion": "Actualización tecnológica para ingeniería enfocada en automatización, software e innovación de procesos."
+    },
+    {
+      "titulo": "Capacitación: Finanzas Personales",
+      "institucion": "Club Juvenil JCI Cofradía",
+      "modalidad": "Presencial",
+      "anio": "2016",
+      "logo": "",
+      "certificado": "assets/certificados/capacitacion-finanzas-personales-jci.jpg",
+      "descripcion": "Taller práctico sobre administración de ingresos, elaboración de presupuestos y gestión financiera personal."
+    },
+    {
+      "titulo": "Diploma de Excelencia Académica (Índice 92.3%)",
+      "institucion": "Instituto Técnico José Castro López",
+      "modalidad": "Reconocimiento",
+      "anio": "2016",
+      "logo": "",
+      "certificado": "assets/certificados/diploma-excelencia-academica-btp-contaduria.jpg",
+      "descripcion": "Máximo reconocimiento académico otorgado durante el año 2016 con índice de 92.3% en Educación Media Técnica."
+    },
+    {
+      "titulo": "Reconocimiento III Excelencia Rotaria",
+      "institucion": "Club Rotario San Pedro Sula",
+      "modalidad": "Reconocimiento",
+      "anio": "2016",
+      "logo": "",
+      "certificado": "assets/certificados/reconocimiento-excelencia-rotaria.jpg",
+      "descripcion": "Homenaje anual de Rotary International a graduandos destacados por excelencia académica sobresaliente en el departamento de Cortés."
+    },
+    {
+      "titulo": "Reconocimiento de Liderazgo Juvenil",
+      "institucion": "Pastoral Juvenil Parroquia Ntra. Sra. del Carmen",
+      "modalidad": "Reconocimiento",
+      "anio": "2014",
+      "logo": "",
+      "certificado": "assets/certificados/reconocimiento-campeonisimo-pastoral-juvenil.jpg",
+      "descripcion": "Reconocimiento por destacada participación, servicio comunitario y liderazgo juvenil."
+    },
+    {
+      "titulo": "Curso de Computación Avanzada",
+      "institucion": "Centro de Alcance Cofradía Centro",
+      "modalidad": "Presencial",
+      "anio": "2012",
+      "logo": "",
+      "certificado": "assets/certificados/computacion-avanzada-centro-de-alcance.jpg",
+      "descripcion": "Formación práctica en sistemas informáticos, aplicaciones de oficina y herramientas de productividad digital."
+    },
+    {
+      "titulo": "IV Campeonísimo Departamental Niño Matemático",
+      "institucion": "Secretaría de Educación de Cortés & FEREMA",
+      "modalidad": "Reconocimiento",
+      "anio": "2007",
+      "logo": "",
+      "certificado": "assets/certificados/campeonisimo-nino-matematico-2007.jpg",
+      "descripcion": "Diploma de Reconocimiento por brillante desempeño departamental en olimpiadas de matemáticas infantiles."
+    }
   ],
 
   "herramientas": [

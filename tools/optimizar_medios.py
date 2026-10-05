@@ -74,10 +74,14 @@ for f in sorted(os.listdir(VID)):
                         "-vf", "scale=540:-2", "-q:v", "4", poster], check=True)
 
 # 3-4. Imágenes
-for carpeta in ("images", "photos"):
+for carpeta in ("images", "photos", "certificados"):
     d = os.path.join(PUB, "assets", carpeta)
+    if not os.path.exists(d):
+        continue
     for f in sorted(os.listdir(d)):
         p = os.path.join(d, f)
+        if os.path.isdir(p):
+            continue
         if f"assets/{carpeta}/{f}" not in usados:
             os.makedirs(UNUSED, exist_ok=True)
             shutil.move(p, os.path.join(UNUSED, f))

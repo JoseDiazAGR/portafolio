@@ -321,54 +321,128 @@ function renderMetodologia(m) {
     .join("");
 }
 
+function openCertificado(c) {
+  openModal(`
+    ${closeBtn}
+    <div class="p-6 md:p-8">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="chip ${c.modalidad === "Reconocimiento" ? "!border-gold !text-gold" : c.modalidad === "Presencial" ? "!border-gold/50 !text-gold" : ""}">${esc(c.modalidad || "Certificación")}</span>
+        ${c.anio ? `<span class="text-xs text-muted">Año ${esc(c.anio)}</span>` : ""}
+      </div>
+      <h3 class="mt-3 text-2xl font-bold md:text-3xl">${esc(c.titulo)}</h3>
+      <p class="mt-1 text-sm font-medium text-gold">${esc(c.institucion)}</p>
+      ${c.descripcion ? `<p class="mt-3 text-sm leading-relaxed text-muted">${esc(c.descripcion)}</p>` : ""}
+      <div class="mt-6 flex items-center justify-center overflow-hidden rounded-2xl border border-line bg-black/40 p-2">
+        <img src="${esc(c.certificado)}" alt="${esc(c.titulo)}" class="max-h-[70vh] w-auto rounded-lg object-contain shadow-2xl" loading="lazy">
+      </div>
+      <div class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-4">
+        <span class="text-xs text-muted">Documento original físico emitido y digitalizado</span>
+        <a href="${esc(c.certificado)}" target="_blank" rel="noopener" class="btn-primary !px-5 !py-2 text-xs">
+          Ver en tamaño completo ↗
+        </a>
+      </div>
+    </div>
+  `, "max-w-4xl");
+}
+
 function renderEducacion(lista = []) {
   const cont = $("#educacion-grid");
   if (!cont || !lista.length) return;
   cont.innerHTML = lista
     .map(
-      (e) => `
-      <div class="reveal card card-hover flex flex-col justify-between p-6">
+      (e, idx) => `
+      <div class="reveal card card-hover flex flex-col justify-between p-6 ${e.certificado ? "cursor-pointer group" : ""}" data-edu-idx="${idx}">
         <div>
           <div class="flex items-center justify-between gap-3">
             <span class="chip !border-gold/40 !text-gold">${esc(e.tipo)}</span>
             <span class="text-xs text-muted">${esc(e.periodo)}</span>
           </div>
-          <h3 class="mt-4 font-display text-xl font-bold">${esc(e.titulo)}</h3>
+          <h3 class="mt-4 font-display text-xl font-bold ${e.certificado ? "group-hover:text-gold transition" : ""}">${esc(e.titulo)}</h3>
           <p class="mt-2 text-sm text-muted">${esc(e.institucion)}</p>
         </div>
-        <div class="mt-6 border-t border-line pt-4 text-xs font-medium text-ink">
-          ${esc(e.estado)}
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-line pt-4">
+          <span class="text-xs font-medium text-ink">${esc(e.estado)}</span>
+          ${e.certificado ? `<button type="button" class="text-xs font-semibold text-gold group-hover:underline">Ver diploma ↗</button>` : ""}
         </div>
       </div>`
     )
     .join("");
+
+  cont.querySelectorAll("[data-edu-idx]").forEach((el) => {
+    const e = lista[+el.dataset.eduIdx];
+    if (e?.certificado) {
+      el.addEventListener("click", () =>
+        openCertificado({
+          titulo: e.titulo,
+          institucion: e.institucion,
+          modalidad: "Diploma Académico",
+          anio: e.periodo,
+          descripcion: e.estado,
+          certificado: e.certificado
+        })
+      );
+    }
+  });
 }
 
 function renderCursos(lista) {
-  const filtros = ["Todos", ...new Set(lista.map((c) => c.modalidad))];
+  const modalidades = [...new Set(lista.map((c) => c.modalidad))];
+  const orden = ["Presencial", "Virtual", "Reconocimiento"];
+  modalidades.sort((a, b) => {
+    const ia = orden.indexOf(a), ib = orden.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+  const filtros = ["Todos", ...modalidades];
   let activo = "Todos";
+
   const pintar = () => {
     $("#cursos-filtros").innerHTML = filtros
-      .map((f) => `<button data-f="${esc(f)}" class="rounded-full border px-4 py-1.5 text-sm transition ${f === activo ? "border-gold bg-gold text-black" : "border-line text-muted hover:text-ink"}">${esc(f)}</button>`)
-      .join("");
-    $("#cursos-grid").innerHTML = lista
-      .filter((c) => activo === "Todos" || c.modalidad === activo)
       .map(
-        (c) => `
-        <div class="card card-hover flex items-start gap-4 p-5">
-          ${logoTile(c.logo, c.institucion)}
-          <div class="min-w-0">
-            <h3 class="font-sans font-semibold leading-snug">${esc(c.titulo)}</h3>
-            <p class="mt-1 text-sm text-muted">${esc(c.institucion)}${c.anio ? " · " + esc(c.anio) : ""}</p>
-            <div class="mt-3 flex flex-wrap items-center gap-2">
-              <span class="chip ${c.modalidad === "Presencial" ? "!border-gold/50 !text-gold" : ""}">${esc(c.modalidad)}</span>
-              ${c.certificado ? `<a href="${esc(c.certificado)}" target="_blank" class="text-xs font-semibold text-gold hover:underline">Ver certificado ↗</a>` : ""}
+        (f) =>
+          `<button data-f="${esc(f)}" class="rounded-full border px-4 py-1.5 text-sm transition ${
+            f === activo ? "border-gold bg-gold text-black font-semibold" : "border-line text-muted hover:text-ink"
+          }">${esc(f)}</button>`
+      )
+      .join("");
+
+    const filtrados = lista.filter((c) => activo === "Todos" || c.modalidad === activo);
+
+    $("#cursos-grid").innerHTML = filtrados
+      .map(
+        (c, idx) => `
+        <div class="reveal card card-hover flex flex-col justify-between p-5 ${c.certificado ? "cursor-pointer group" : ""}" data-curso-idx="${idx}">
+          <div>
+            <div class="flex items-start gap-4">
+              ${logoTile(c.logo, c.institucion)}
+              <div class="min-w-0 flex-1">
+                <h3 class="font-sans font-semibold leading-snug ${c.certificado ? "group-hover:text-gold transition" : ""}">${esc(c.titulo)}</h3>
+                <p class="mt-1 text-sm text-muted">${esc(c.institucion)}${c.anio ? " · " + esc(c.anio) : ""}</p>
+              </div>
             </div>
+            ${c.descripcion ? `<p class="mt-3 text-xs leading-relaxed text-muted line-clamp-2">${esc(c.descripcion)}</p>` : ""}
+          </div>
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-line/60 pt-3">
+            <span class="chip ${c.modalidad === "Reconocimiento" ? "!border-gold !text-gold" : c.modalidad === "Presencial" ? "!border-gold/50 !text-gold" : ""}">${esc(c.modalidad)}</span>
+            ${c.certificado ? `<button type="button" class="text-xs font-semibold text-gold group-hover:underline">Ver diploma ↗</button>` : ""}
           </div>
         </div>`
       )
       .join("");
-    document.querySelectorAll("[data-f]").forEach((b) => b.addEventListener("click", () => ((activo = b.dataset.f), pintar())));
+
+    document.querySelectorAll("[data-f]").forEach((b) =>
+      b.addEventListener("click", () => {
+        activo = b.dataset.f;
+        pintar();
+        observeReveals();
+      })
+    );
+
+    document.querySelectorAll("[data-curso-idx]").forEach((card) => {
+      const c = filtrados[+card.dataset.cursoIdx];
+      if (c && c.certificado) {
+        card.addEventListener("click", () => openCertificado(c));
+      }
+    });
   };
   pintar();
 }
