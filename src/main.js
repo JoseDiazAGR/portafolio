@@ -260,21 +260,65 @@ const metricasMini = (lista = []) =>
 function renderEmprendimientos(lista) {
   const cont = $("#emprendimientos-grid");
   cont.innerHTML = lista
-    .map(
-      (e, i) => `
-      <div class="reveal grid items-start gap-8 lg:grid-cols-[1fr_2fr]">
-        <div>
-          ${e.imagen ? `<img src="${esc(e.imagen)}" alt="${esc(e.nombre)}" loading="lazy" class="mb-6 aspect-video w-full rounded-2xl border border-line object-cover">` : ""}
-          <span class="chip">${esc(e.tipo)}</span>
-          <h3 class="mt-3 text-3xl font-bold">${esc(e.nombre)}</h3>
-          <p class="mt-4 text-muted">${esc(e.descripcion)}</p>
-          ${metricasMini(e.metricas)}
+    .map((e, i) => {
+      const tieneMultiplesVideos = e.videos && e.videos.length > 1;
+      const tieneUnVideo = e.videos && e.videos.length === 1;
+      return `
+      <article class="reveal card overflow-hidden p-6 md:p-8">
+        <div class="grid gap-6 ${e.imagen && tieneMultiplesVideos ? "lg:grid-cols-[1.3fr_1fr]" : tieneUnVideo ? "lg:grid-cols-[1.3fr_minmax(0,240px)] items-center" : "lg:grid-cols-1"}">
+          <div class="flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3">
+                <span class="chip !border-gold/40 !text-gold">${esc(e.tipo)}</span>
+                <span class="text-xs text-muted">${e.videos?.length || 0} ${e.videos?.length === 1 ? "video" : "videos"}</span>
+              </div>
+              <h3 class="mt-3 text-2xl font-bold md:text-3xl">${esc(e.nombre)}</h3>
+              <p class="mt-3 text-sm leading-relaxed text-muted">${esc(e.descripcion)}</p>
+            </div>
+            ${e.metricas?.length ? `
+              <div class="mt-6 grid grid-cols-3 gap-3 border-t border-line pt-5">
+                ${e.metricas.map((m) => `
+                  <div class="rounded-xl border border-line bg-elevated p-3 text-center">
+                    <div class="font-display text-lg font-bold text-gold md:text-xl">${esc(m.valor)}</div>
+                    <div class="mt-1 text-[11px] leading-tight text-muted">${esc(m.etiqueta)}</div>
+                  </div>
+                `).join("")}
+              </div>` : ""}
+          </div>
+
+          ${e.imagen && tieneMultiplesVideos ? `
+            <div class="overflow-hidden rounded-2xl border border-line bg-elevated self-center">
+              <img src="${esc(e.imagen)}" alt="${esc(e.nombre)}" loading="lazy" class="h-48 w-full object-cover object-top transition duration-500 hover:scale-105 sm:h-56 md:h-60">
+              <div class="border-t border-line bg-surface/80 px-4 py-2 text-center text-xs text-muted">
+                Presencia de marca y contenido en redes sociales
+              </div>
+            </div>` : ""}
+
+          ${tieneUnVideo ? `
+            <div class="mx-auto w-full max-w-[220px]" data-emp="${i}">
+              <div class="mb-2 text-center text-xs font-semibold uppercase tracking-wider text-muted">Video de campaña</div>
+              ${videoThumb(e.videos[0])}
+            </div>` : ""}
         </div>
-        <div class="grid grid-cols-2 gap-3 sm:grid-cols-3" data-emp="${i}">${e.videos.map((v) => videoThumb(v)).join("")}</div>
-      </div>`
-    )
+
+        ${tieneMultiplesVideos ? `
+          <div class="mt-8 border-t border-line pt-6">
+            <div class="mb-4 flex items-center justify-between">
+              <span class="text-xs font-semibold uppercase tracking-wider text-muted">Campañas publicitarias y videos de venta</span>
+              <span class="text-xs text-gold">Clic para reproducir</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5" data-emp="${i}">
+              ${e.videos.map((v) => videoThumb(v)).join("")}
+            </div>
+          </div>` : ""}
+      </article>`;
+    })
     .join("");
-  lista.forEach((e, i) => bindVideoThumbs(cont.querySelector(`[data-emp="${i}"]`), e.videos));
+
+  lista.forEach((e, i) => {
+    const el = cont.querySelector(`[data-emp="${i}"]`);
+    if (el) bindVideoThumbs(el, e.videos);
+  });
 }
 
 function renderInmobiliario(inmo) {

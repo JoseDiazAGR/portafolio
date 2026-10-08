@@ -140,7 +140,7 @@
     {
       "nombre": "Frutypostres",
       "tipo": "Heladería y postres",
-      "imagen": "assets/videos/posters/anuncio-mangonada.jpg",
+      "imagen": "",
       "descripcion": "Emprendimiento propio de helados y postres: marca, operación y campañas de venta en redes sociales.",
       "videos": [
         { "src": "assets/videos/anuncio-mangonada.mp4", "titulo": "Anuncio Mangonada" }
