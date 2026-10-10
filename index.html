@@ -132,40 +132,84 @@
           </p>
         </div>
 
-        <!-- Visor del Dashboard -->
+        <!-- Visor de Dashboards Power BI -->
         <div class="reveal card mt-12 overflow-hidden p-4 sm:p-6 md:p-8">
-          <div class="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
-            <div class="flex items-center gap-2.5">
-              <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span class="font-display font-semibold text-sm">Dashboard de Combustibles Honduras</span>
-              <span class="chip !text-[11px] !py-0.5">En vivo · Interactivo</span>
+          <div class="grid gap-6 lg:grid-cols-2">
+            
+            <!-- Caso 1: Combustibles en Honduras -->
+            <div class="flex flex-col justify-between rounded-xl border border-line bg-surface/50 p-4">
+              <div>
+                <div class="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-line pb-3">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="font-display font-semibold text-sm">Combustibles Honduras</span>
+                    <span class="chip !text-[10px] !py-0.5">En vivo</span>
+                  </div>
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiOTFkYTdiNGItYjljZi00ODRhLTg3OTEtZTkxM2VkZmUwMDYwIiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" target="_blank" rel="noopener noreferrer" class="btn-ghost !py-1 !px-2.5 text-[11px]">
+                    Pantalla completa ↗
+                  </a>
+                </div>
+                <div class="flex justify-center overflow-x-auto rounded-xl bg-black/40 p-2">
+                  <iframe title="Dashboard_Combustibles_Honduras" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTFkYTdiNGItYjljZi00ODRhLTg3OTEtZTkxM2VkZmUwMDYwIiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+              <div class="mt-4 grid grid-cols-2 gap-2 border-t border-line pt-3 text-xs sm:grid-cols-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Plataforma</span>
+                  <p class="font-display text-xs font-bold text-gold">Power BI Service</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Ingesta</span>
+                  <p class="font-display text-xs font-bold text-gold">ETL Python</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Modelo</span>
+                  <p class="font-display text-xs font-bold text-gold">5 Tablas</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Limpieza</span>
+                  <p class="font-display text-xs font-bold text-gold">Power Query</p>
+                </div>
+              </div>
             </div>
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiOTFkYTdiNGItYjljZi00ODRhLTg3OTEtZTkxM2VkZmUwMDYwIiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" target="_blank" rel="noopener noreferrer" class="btn-ghost !py-1.5 !px-3.5 text-xs">
-              Ver reporte en pantalla completa ↗
-            </a>
-          </div>
 
-          <div class="flex justify-center overflow-x-auto rounded-xl bg-black/40 p-2 sm:p-4">
-            <iframe title="Dashboard_Combustibles_Honduras" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTFkYTdiNGItYjljZi00ODRhLTg3OTEtZTkxM2VkZmUwMDYwIiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
-          </div>
+            <!-- Caso 2: Distribuidora Atlantis -->
+            <div class="flex flex-col justify-between rounded-xl border border-line bg-surface/50 p-4">
+              <div>
+                <div class="mb-4 flex flex-wrap items-center justify-between gap-2 border-b border-line pb-3">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="font-display font-semibold text-sm">Distribuidora Atlantis</span>
+                    <span class="chip !text-[10px] !py-0.5">Caso Ficticio</span>
+                  </div>
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiY2NiNDhmN2UtYTc0Yy00Zjk0LWJmOWYtMjVjZGQ4ZTdjM2I4IiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" target="_blank" rel="noopener noreferrer" class="btn-ghost !py-1 !px-2.5 text-[11px]">
+                    Pantalla completa ↗
+                  </a>
+                </div>
+                <div class="flex justify-center overflow-x-auto rounded-xl bg-black/40 p-2">
+                  <iframe title="Dashboart_Distribuidora_Atlantis_caso_ficticio" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiY2NiNDhmN2UtYTc0Yy00Zjk0LWJmOWYtMjVjZGQ4ZTdjM2I4IiwidCI6IjZjNWM3NmY2LWU0OTQtNDZkNy05ZjZhLTNlYTUwZTUzNmMyZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+              </div>
+              <div class="mt-4 grid grid-cols-2 gap-2 border-t border-line pt-3 text-xs sm:grid-cols-4">
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Plataforma</span>
+                  <p class="font-display text-xs font-bold text-gold">Power BI Service</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Tipo</span>
+                  <p class="font-display text-xs font-bold text-gold">Caso Comercial</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Enfoque</span>
+                  <p class="font-display text-xs font-bold text-gold">Ventas & Stock</p>
+                </div>
+                <div>
+                  <span class="text-[10px] uppercase tracking-wider text-muted">Análisis</span>
+                  <p class="font-display text-xs font-bold text-gold">DAX & KPIs</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="mt-6 grid grid-cols-2 gap-4 border-t border-line pt-5 sm:grid-cols-4">
-            <div>
-              <span class="text-xs uppercase tracking-wider text-muted">Plataforma</span>
-              <p class="font-display text-sm font-bold text-gold sm:text-base">Power BI Desktop & Service</p>
-            </div>
-            <div>
-              <span class="text-xs uppercase tracking-wider text-muted">Ingesta de Datos</span>
-              <p class="font-display text-sm font-bold text-gold sm:text-base">Script ETL en Python</p>
-            </div>
-            <div>
-              <span class="text-xs uppercase tracking-wider text-muted">Arquitectura</span>
-              <p class="font-display text-sm font-bold text-gold sm:text-base">Modelo de 5 Tablas</p>
-            </div>
-            <div>
-              <span class="text-xs uppercase tracking-wider text-muted">Transformación</span>
-              <p class="font-display text-sm font-bold text-gold sm:text-base">Power Query & M</p>
-            </div>
           </div>
         </div>
 
@@ -262,52 +306,6 @@
                 <span class="chip !border-gold/40 !text-gold">Power BI Service</span>
                 <span class="chip !border-gold/40 !text-gold">Integración Web Embebida</span>
                 <span class="chip !border-gold/40 !text-gold">Pipeline ETL Completo</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dashboard Distribuidora Atlantis -->
-        <div class="mt-16">
-          <div class="reveal max-w-2xl">
-            <p class="eyebrow">Caso Ficticio · Business Intelligence</p>
-            <h3 class="text-2xl font-bold md:text-3xl">Dashboard Distribuidora Atlantis</h3>
-            <p class="mt-2 text-sm text-muted">Caso práctico de análisis comercial y control de ventas desarrollado en Power BI con integración interactiva en tiempo real.</p>
-          </div>
-
-          <!-- Visor del Dashboard Atlantis -->
-          <div class="reveal card mt-8 overflow-hidden p-4 sm:p-6 md:p-8">
-            <div class="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-line pb-4">
-              <div class="flex items-center gap-2.5">
-                <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span class="font-display font-semibold text-sm">Dashboard Distribuidora Atlantis (Caso Ficticio)</span>
-                <span class="chip !text-[11px] !py-0.5">En vivo · Interactivo</span>
-              </div>
-              <a href="https://app.powerbi.com/reportEmbed?reportId=aca5ebe0-9087-4018-96a7-33f5abc21cab&autoAuth=true&ctid=6c5c76f6-e494-46d7-9f6a-3ea50e536c2e" target="_blank" rel="noopener noreferrer" class="btn-ghost !py-1.5 !px-3.5 text-xs">
-                Ver reporte en pantalla completa ↗
-              </a>
-            </div>
-
-            <div class="flex justify-center overflow-x-auto rounded-xl bg-black/40 p-2 sm:p-4">
-              <iframe title="Dashboart_Distribuidora_Atlantis_caso_ficticio" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=aca5ebe0-9087-4018-96a7-33f5abc21cab&autoAuth=true&ctid=6c5c76f6-e494-46d7-9f6a-3ea50e536c2e" frameborder="0" allowFullScreen="true"></iframe>
-            </div>
-
-            <div class="mt-6 grid grid-cols-2 gap-4 border-t border-line pt-5 sm:grid-cols-4">
-              <div>
-                <span class="text-xs uppercase tracking-wider text-muted">Plataforma</span>
-                <p class="font-display text-sm font-bold text-gold sm:text-base">Power BI Desktop & Service</p>
-              </div>
-              <div>
-                <span class="text-xs uppercase tracking-wider text-muted">Tipo de Proyecto</span>
-                <p class="font-display text-sm font-bold text-gold sm:text-base">Caso Ficticio Distribución</p>
-              </div>
-              <div>
-                <span class="text-xs uppercase tracking-wider text-muted">Enfoque</span>
-                <p class="font-display text-sm font-bold text-gold sm:text-base">Ventas & Distribución</p>
-              </div>
-              <div>
-                <span class="text-xs uppercase tracking-wider text-muted">Visualización</span>
-                <p class="font-display text-sm font-bold text-gold sm:text-base">Dashboard Interactivo DAX</p>
               </div>
             </div>
           </div>

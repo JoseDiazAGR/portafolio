@@ -92,12 +92,10 @@
 
 /* Dashboard Power BI responsivo */
 #powerbi iframe {
+  width: 100%;
   max-width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 373.5;
 }
-@media (max-width: 640px) {
-  #powerbi iframe {
-    height: auto;
-    aspect-ratio: 600 / 373.5;
-  }
-}
+
 
